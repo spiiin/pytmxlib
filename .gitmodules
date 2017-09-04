@@ -1,3 +1,0 @@
-[submodule "tmxlib_test/tiled"]
-	path = tmxlib_test/tiled
-	url = git://github.com/bjorn/tiled.git
