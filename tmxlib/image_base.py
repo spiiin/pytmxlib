@@ -124,11 +124,12 @@ class Image(ImageBase, fileio.ReadWriteBase):
     # Implement ImageRegion API
     top_left = 0, 0
 
-    def __init__(self, data=None, trans=None, size=None, source=None):
+    def __init__(self, data=None, trans=None, size=None, source=None, base_path=None):
         self._data = data
         self.source = source
         self._size = size
         self.trans = trans
+        self.base_path = base_path
 
     @property
     def size(self):

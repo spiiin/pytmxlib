@@ -23,7 +23,7 @@ image_classes.append(image_png.PngImage)
 
 preferred_image_class = image_classes[0]
 
-def open(filename, trans=None, size=None):
+def open(filename, trans=None, size=None, base_path=None):
     """Open the given image file
 
     Uses ``preferred_image_class``.
@@ -51,4 +51,4 @@ def open(filename, trans=None, size=None):
     images.
     """
     cls = preferred_image_class
-    return cls(trans=trans, size=size, source=filename)
+    return cls(trans=trans, size=size, source=filename, base_path=base_path)
